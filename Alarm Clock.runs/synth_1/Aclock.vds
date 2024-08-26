@@ -1,0 +1,212 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Mar 30 17:42:51 2024
+# Process ID: 20116
+# Current directory: C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.runs/synth_1
+# Command line: vivado.exe -log Aclock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Aclock.tcl
+# Log file: C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.runs/synth_1/Aclock.vds
+# Journal file: C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.runs/synth_1\vivado.jou
+# Running On: Lappy-Akhil, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 2, Host memory: 8215 MB
+#-----------------------------------------------------------
+source Aclock.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 468.281 ; gain = 179.688
+Command: synth_design -top Aclock -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8292
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 914.363 ; gain = 442.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Aclock' [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Aclock' (0#1) [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:23]
+WARNING: [Synth 8-6014] Unused sequential element a_sec1_reg was removed.  [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:66]
+WARNING: [Synth 8-6014] Unused sequential element a_sec0_reg was removed.  [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:67]
+WARNING: [Synth 8-7137] Register tmp_hour_reg in module Aclock has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:68]
+WARNING: [Synth 8-7137] Register tmp_minute_reg in module Aclock has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.srcs/sources_1/new/Aclock.v:69]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1021.980 ; gain = 549.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1021.980 ; gain = 549.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1021.980 ; gain = 549.699
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1021.980 ; gain = 549.699
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    6 Bit        Muxes := 9     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Aclock has port M_out1[3] driven by constant 0
+WARNING: [Synth 8-3917] design Aclock has port S_out1[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     2|
+|3     |LUT2   |    15|
+|4     |LUT3   |    23|
+|5     |LUT4   |    13|
+|6     |LUT5   |    27|
+|7     |LUT6   |    46|
+|8     |FDCE   |    38|
+|9     |FDPE   |    12|
+|10    |LDC    |    12|
+|11    |IBUF   |    20|
+|12    |OBUF   |    23|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   233|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1209.863 ; gain = 737.582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1219.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1314.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  LDC => LDCE: 12 instances
+
+Synth Design complete | Checksum: 2acb161f
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1314.059 ; gain = 845.777
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1314.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/akhil/verilog/Alarm Clock/Alarm Clock.runs/synth_1/Aclock.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Aclock_utilization_synth.rpt -pb Aclock_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 30 17:43:21 2024...
